@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alber: Flashcards</title>
+    <style>
+      /* Estilos CSS aqui */
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        display: flex;
+      }
+
+      .menu {
+        flex: 1;
+        background-color: #333;
+        color: white;
+        padding: 20px;
+      }
+
+      .usuario {
+        flex: 1;
+        background-color: #f4f4f4;
+        padding: 20px;
+      }
+
+      .busca {
+        width: calc(100% - 400px); /* Ajuste conforme necessário */
+        margin: 20px auto;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      /* Estilos para os cards e outros elementos */
+    </style>
+    
+  </head>
+  <body>
+    <div class="container">
+      <section class="menu">
+        <h2>Alber: Flashcards</h2>
+        <ul>
+          <li><img src="icone_principal.png" alt="" /> Principal</li>
+          <li><img src="icone_criacao.png" alt="" /> Criação de Cards</li>
+          <li><img src="icone_banco_de_decks.png" alt="" /> Banco de Decks</li>
+          <li><img src="icone_progresso.png" alt="" /> Progresso</li>
+          <li><img src="icone_configuracao.png" alt="" /> Configuração</li>
+          <li><img src="icone_sair.png" alt="" /> Sair</li>
+        </ul>
+      </section>
+      <section class="usuario">
+        <div class="foto-usuario">
+          <img src="foto_usuario.jpg" alt="Foto do Usuário" />
+          <p>Olá, {usuário}</p>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <h3>Último Aprendido</h3>
+          </div>
+          <div class="card">
+            <h3>Erros da Semana</h3>
+            <button>Revisar</button>
+          </div>
+          <!-- Mais cards aqui -->
+        </div>
+        <section class="progresso">
+          <div class="miniatura">
+            <!-- Miniatura do deck em progresso -->
+          </div>
+          <!-- Mais miniaturas aqui -->
+        </section>
+      </section>
+    </div>
+    <div class="busca">
+      <input type="text" placeholder="Buscar..." />
+    </div>
+    <div class="tags">
+      <button><img src="icone_materia.png" alt="" /> Matéria/Disciplina</button>
+      <!-- Mais tags aqui -->
+    </div>
+    <div class="cards">
+      <div class="card">
+        <h3>Estude</h3>
+      </div>
+      <div class="card">
+        <h3>Criar Cards</h3>
+      </div>
+      <div class="card">
+        <h3>Banco de Decks</h3>
+      </div>
+      <!-- Mais cards aqui -->
+    </div>
+    <div class="cards">
+      <div class="card grande">
+        <h3>Meus Flashcards</h3>
+      </div>
+      <div class="card">
+        <h3>Revisão da Semana</h3>
+      </div>
+    </div>
+    <div class="card alongado">
+      <h3>Algo sobre aprendizado</h3>
+      <!-- Conteúdo do card -->
+    </div>
+  </body>
+</html>
