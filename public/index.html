@@ -50,6 +50,13 @@
         border-radius: 30px;
       }
 
+      .miniatura, .card, .card-grande, .card-alongado{
+        flex: 1;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-right: 10px;
+        box-sizing: border-box;
+      } 
       /* Estilos para os cards e outros elementos */
     </style>
   </head>
@@ -63,178 +70,108 @@
 
     <div class="container">
       
-      <aside>
+
+      <aside class="barra-lateral-esquerda">
         <section class="menu">
           <h2>Albert: Flashcards</h2>
-
           <ul>
-            <li ><img src="icone_principal.png" alt="" /> Principal</li>
-            <br>
-            <li><img src="icone_criacao.png" alt="" /> Criação de Cards</li>
-            <br>
-            <li><img src="icone_banco_de_decks.png" alt="" /> Banco de Decks</li>
-            <br>
-            <li><img src="icone_progresso.png" alt="" /> Progresso</li>
-            <br>
+            <li ><img src="icone_principal.png" alt="" /> Principal</li> <br>
+            <li><img src="icone_criacao.png" alt="" /> Criação de Cards</li> <br>
+            <li><img src="icone_banco_de_decks.png" alt="" /> Banco de Decks</li> <br>
+            <li><img src="icone_progresso.png" alt="" /> Progresso</li> <br>
             <li><img src="icone_configuracao.png" alt="" /> Configuração</li>
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <li><img src="icone_sair.png" alt="" /> Sair</li>
           </ul>
-
         </section>
       </aside>
-
+      
+      
       <main style="margin: 10px;"> <!-- CRIAR CSS DEPOIS -->
-        <section>
-          
-          <section class="busca" style="width: auto;">
-              <button>v</button>
-              <input type="text" placeholder="Buscar..." style="display: inline;"/>
-              <span class="icone-busca">lupa</span>
-          </section>
-          
-          <section class="tags">
-            <button><img src="icone_materia.png" alt="" /> Matéria/Disciplina</button>
-            <button><img src="icone_materia.png" alt="" /> Matéria/Disciplina</button>
-            <button><img src="icone_materia.png" alt="" /> Matéria/Disciplina</button>
-            <button><img src="icone_materia.png" alt="" /> Matéria/Disciplina</button>
-            <button><img src="icone_materia.png" alt="" /> Matéria/Disciplina</button>
-            <span>veja todos</span>
-          </section>
-          
-          <section style="padding-top: 20px;">
+        <section class="busca" style="width: auto;">
+          <button>v</button>
+          <input type="text" placeholder="Buscar..." style="display: inline;"/>
+          <span class="icone-busca">lupa</span>
+        </section>
 
-            <div class="cards-principais" style="display: flex;">
-
-              <div class="card" style="flex: 1;
-              border: 1px solid #ccc;
-              padding: 10px;
-              margin-right: 10px;
-              box-sizing: border-box;">
-                <h3>Estude</h3>
-              </div>
-
-              <div class="card" style="flex: 1;
-              border: 1px solid #ccc;
-              padding: 10px;
-              margin-right: 10px;
-              box-sizing: border-box;">
-                <h3>Criar Cards</h3>
-              </div>
-
-              <div class="card" style="flex: 1;
-              border: 1px solid #ccc;
-              padding: 10px;
-              margin-right: 10px;
-              box-sizing: border-box;">
-                <h3>Banco de Decks</h3>
-              </div>
-
-              <!-- Mais cards aqui -->
+        <section class="tags">
+          <button><img src="icone_materia.png" alt="" /> Matéria/Disciplina</button>
+          <button><img src="icone_materia.png" alt="" /> Matéria/Disciplina</button>
+          <button><img src="icone_materia.png" alt="" /> Matéria/Disciplina</button>
+          <button><img src="icone_materia.png" alt="" /> Matéria/Disciplina</button>
+          <button><img src="icone_materia.png" alt="" /> Matéria/Disciplina</button>
+          <span>veja todos</span>
+        </section>
+        
+        <section style="padding-top: 20px;">
+          <div class="cards-principais" style="display: flex;">
+            <div class="card">
+              <h3>Estude</h3>
             </div>
-
-            <div class="cards" style="display: flex; padding-top: 10px;">
-
-              <div class="card grande" style="flex: 1;
-              border: 1px solid #ccc;
-              padding: 10px;
-              margin-right: 10px;
-              box-sizing: border-box;">
-                <h3>Meus Flashcards</h3>
-              </div>
-
-              <div class="card" style="flex: 1;
-              border: 1px solid #ccc;
-              padding: 10px;
-              margin-right: 10px;
-              box-sizing: border-box;">
-                <h3>Revisão Semanal</h3>
-              </div>
-              
+            <div class="card">
+              <h3>Criar Cards</h3>
             </div>
-
-          </section>
-
-          <section style="padding-top: 10px;">
-            <div class="card alongado" style="flex: 1;
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin-right: 10px;
-            box-sizing: border-box;">
-              <h3>Algo sobre aprendizado</h3>
-              <!-- Conteúdo do card -->
+            <div class="card">
+              <h3>Banco de Decks</h3>
             </div>
-          </section>
+          </div>
 
-          <footer>
-            todos os direitos reservados
-          </footer>
-          
+          <div class="cards" style="display: flex; padding-top: 10px;">
+            <div class="card-grande">
+              <h3>Meus Flashcards</h3>
+            </div>
+            <div class="card">
+              <h3>Revisão Semanal</h3>
+            </div>
+          </div>
+        </section>
+
+        <section style="padding-top: 10px;">
+          <div class="card-alongado">
+            <h3>Algo sobre aprendizado</h3>
+            <!-- Conteúdo do card -->
+          </div>
+        </section>
+
+        <section class="rodape">
+          todos os direitos reservados
         </section>
       </main>
       
-      <section class="usuario">
-
+      
+      <aside class="usuario">
         <div class="foto-usuario">
           <img src="foto_usuario.jpg" alt="Foto do Usuário" /><span> Olá, {usuário}</span>
         </div>
-
         <div class="card" style="padding-top: 10px;">
-          <div class="card alongado" style="flex: 1;
-          border: 1px solid #ccc;
-          padding: 10px;
-          margin-right: 10px;
-          box-sizing: border-box;">
+          <div class="card-alongado">
           <h3>Último Aprendido</h3>
         </div>
-        
         <div class="card" style="padding-top: 10px;">
-          <div class="card alongado" style="flex: 1;
-          border: 1px solid #ccc;
-          padding: 10px;
-          margin-right: 10px;
-          box-sizing: border-box;">
+          <div class="card-alongado">
           <h3>Erros da Semana</h3>
           <button>Revisar</button>
-        </div>
-        <!-- Mais cards aqui -->
-
-        <br><br>
+        </div>  <br><br>
 
         <section class="progresso">
           <h3>Progresso</h3>
-          
-          <div class="miniatura" style="padding-top: 10px;">
-            <div class="card alongado" style="flex: 1;
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin-right: 10px;
-            box-sizing: border-box;">
+          <div class="miniatura">
             <div>1</div>
             <div>barra</div>
-          </div>
-          <br>
-          <div class="miniatura" style="flex: 1;
-          border: 1px solid #ccc;
-          padding: 10px;
-          margin-right: 10px;
-          box-sizing: border-box;">
+          </div>          <br>
+          <div class="miniatura">
             <div>2</div>
             <div>barra</div>
-          </div>
-          <br>
-          <div class="miniatura" style="flex: 1;
-          border: 1px solid #ccc;
-          padding: 10px;
-          margin-right: 10px;
-          box-sizing: border-box;">
+          </div>          <br>
+          <div class="miniatura">
             <div>3</div><span></span>
             <div>barra</div>
           </div>
-          
         </section>
-
-      </section>
+      </aside>
+      
+      
     </div>
+
   </body>
 </html>
