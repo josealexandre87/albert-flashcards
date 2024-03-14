@@ -1,4 +1,4 @@
-import { SearchBar } from "../components/molecules/SearchBar/SearchBar";
+import { SearchBar } from "./components/molecules/SearchBar/SearchBar";
 
 export const App = () => {
   return (
