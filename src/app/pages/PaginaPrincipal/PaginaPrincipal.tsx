@@ -4,8 +4,8 @@ import { ConteudoPrincipal } from "../../components/structures/ConteudoPrincipal
 import { PainelDoUsuario } from "../../components/structures/PainelDoUsuario/PainelDoUsuario";
 import { ContainerPrincipal } from "./EstiloPaginaPrincipal";
 
-//O Container principal irá renderizar a esturua vinda de ./structure/.
-//Lembrar de Zera a formatação da <div> ContainerPrincipal, no arquivo HomeStyle.ts
+//O Container principal irá renderizar a estruturas vinda de .app/structures/
+//Lembrar de Zera a formatação da <div> ContainerPrincipal, no arquivo EstiloPaginaPrincipal.ts
 export const PaginaPrincipal = () => {
   return (
     <>
