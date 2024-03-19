@@ -7,7 +7,7 @@ export const EstiloGlobal = createGlobalStyle`
         background: #00ffa0;
         padding: 1rem;
         border-radius: 1rem;
-        border: 0.5vmin solid #05060f;
+        border: 1px solid #05060f;
         box-shadow: 0.4rem 0.4rem #05060f;
         //overflow: hidden;
         color: black;
@@ -17,7 +17,7 @@ export const EstiloGlobal = createGlobalStyle`
         background: #FFFFFF;
         padding: 1rem;
         border-radius: 1rem;
-        border: 0.5vmin solid #05060f;
+        border: 1px solid #05060f;
         box-shadow: 0.4rem 0.4rem #05060f;
         color: black;
     }

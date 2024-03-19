@@ -5,14 +5,16 @@ interface ButtonProps {
 }
 
 const StyledButton = styled.button`
-  --button_radius: 0.75em;
+  --button_radius: 2em;
   --button_color: #e8e8e8;
-  --button_outline_color: #000000;
+  --button_outline_color: #05060f;
   font-size: 16px;
   font-weight: bold;
+  padding: 0px;
   border: none;
   border-radius: var(--button_radius);
   background: var(--button_outline_color);
+  box-shadow: 0.1em #05060f;
   
 
   .button_top {
@@ -25,6 +27,7 @@ const StyledButton = styled.button`
     color: var(--button_outline_color);
     transform: translateY(-0.2em);
     transition: transform 0.1s ease;
+
   }
 
   &:hover .button_top {
