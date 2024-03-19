@@ -2,21 +2,23 @@ import { BarraDeNavegacao } from "../../components/structures/BarraDeNavegacao/B
 import { BarraDePesquisa } from "../../components/organisms/BarraDePesquisa/BarraDePesquisa";
 import { ConteudoPrincipal } from "../../components/structures/ConteudoPrincipal/ConteudoPrincipal";
 import { PainelDoUsuario } from "../../components/structures/PainelDoUsuario/PainelDoUsuario";
-import { ContainerPrincipal } from "./EstiloPaginaPrincipal";
+import { BordaDaPaginaPrincipal, ContainerCentral } from "./EstiloPaginaPrincipal";
 
 //O Container principal irá renderizar a estruturas vinda de .app/structures/
 //Lembrar de Zera a formatação da <div> ContainerPrincipal, no arquivo EstiloPaginaPrincipal.ts
 export const PaginaPrincipal = () => {
   return (
     <>
-      <BarraDeNavegacao />
-      <BarraDePesquisa />
+      <BordaDaPaginaPrincipal>
+        <BarraDeNavegacao />
+        <BarraDePesquisa />
 
-      <ContainerPrincipal>
-        <ConteudoPrincipal /> <>RENDERIZAÇÃO DAS SEÇÕES DA APLICAÇÃO</>
-      </ContainerPrincipal>
+        <ContainerCentral>
+          <ConteudoPrincipal /> <>RENDERIZAÇÃO DAS SEÇÕES DA APLICAÇÃO</>
+        </ContainerCentral>
 
-      <PainelDoUsuario />
+        <PainelDoUsuario />
+      </BordaDaPaginaPrincipal>
     </>
   );
 };

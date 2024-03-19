@@ -5,19 +5,19 @@ import { Button } from '../../atoms/Button/Button';
 
 
 const StyledSearchBar = styled.div`
-  display: flex;
-  align-items: center;
-  background-color: #f8f9fa;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 4px;
+  background: #FFFFFF;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  color: black;
 `;
 
 export const SearchBar = () => {
   return (
     <StyledSearchBar>
+      <Button> Pesquisar </Button>
       <Input />
-      <Button>Pesquisar</Button>
     </StyledSearchBar>
   );
 };

@@ -2,9 +2,13 @@
 import styled from 'styled-components';
 
 const StyledInput = styled.input`
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+background: #FFFFFF;
+padding: 1rem;
+margin: 1em;
+border-radius: 4rem;
+border: 0.5vmin solid #05060f;
+box-shadow: 0.4rem 0.4rem #05060f;
+color: black;
 `;
 
 export const Input = () => {
