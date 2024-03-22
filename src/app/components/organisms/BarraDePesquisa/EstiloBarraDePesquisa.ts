@@ -1,5 +1,5 @@
 import styled from "styled-components";
 
 
-export const ContainerBarraDePesquisa = styled.div`
+export const EstiloBarraDePesquisa = styled.div`
 `;

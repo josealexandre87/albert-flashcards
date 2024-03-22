@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
 
-export const ContainerPainelDoUsuario = styled.aside`
+export const EstiloPainelDoUsuario = styled.aside`
 
 `;

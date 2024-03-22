@@ -1,12 +1,12 @@
-import { ContainerBarraDePesquisa } from "./EstiloBarraDePesquisa";
+import { EstiloBarraDePesquisa } from "./EstiloBarraDePesquisa";
 
 
 export const BarraDePesquisa = () => {
     return (
         <>
-            <ContainerBarraDePesquisa>
+            <EstiloBarraDePesquisa>
                 <>BOTÃO VOLTAR</> <>INPUT: Pesquise Algo</> <>LUPA</>
-            </ContainerBarraDePesquisa>
+            </EstiloBarraDePesquisa>
         </>
     );
 };
