@@ -1,11 +1,11 @@
-import { ContainerConteudoPrincipal } from "./EstiloConteudoPrincipal";
+import { EstiloConteudoPrincipal } from "./EstiloConteudoPrincipal";
 
 export const ConteudoPrincipal = () => {
   return (
     <>
-      <ContainerConteudoPrincipal>
+      <EstiloConteudoPrincipal>
         
-      </ContainerConteudoPrincipal>
+      </EstiloConteudoPrincipal>
     </>
   );
 };

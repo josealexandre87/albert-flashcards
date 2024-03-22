@@ -1,11 +1,11 @@
-import { ContainerPainelDoUsuario } from "./EstiloPainelDoUsuario";
+import { EstiloPainelDoUsuario } from "./EstiloPainelDoUsuario";
 
 export const PainelDoUsuario = () => {
   return (
     <>
-      <ContainerPainelDoUsuario>
+      <EstiloPainelDoUsuario>
         
-      </ContainerPainelDoUsuario>
+      </EstiloPainelDoUsuario>
     </>
   );
 };

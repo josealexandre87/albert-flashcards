@@ -2,13 +2,13 @@
 import styled from 'styled-components';
 
 const StyledInput = styled.input`
-background: #FFFFFF;
+background: #FCFCFC;
 padding: 1rem;
 margin: 1em;
 border-radius: 2rem;
-border: 1px solid #05060f;
-box-shadow: 0.2rem 0.2rem #05060f;
-color: black;
+border: 2px solid #01090C;
+box-shadow: 0.2rem 0.2rem #01090C;
+color: #01090C;
 `;
 
 export const Input = () => {

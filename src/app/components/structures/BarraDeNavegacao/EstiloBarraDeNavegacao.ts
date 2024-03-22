@@ -1,5 +1,5 @@
 import styled from "styled-components";
 
 
-export const ContainerBarraDeNavegacao = styled.aside`
+export const EstiloBarraDeNavegacao = styled.aside`
 `;

@@ -1,11 +1,11 @@
-import { ContainerBarraDeNavegacao } from "./EstiloBarraDeNavegacao";
+import { EstiloBarraDeNavegacao } from "./EstiloBarraDeNavegacao";
 
 export const BarraDeNavegacao = () => {
   return (
     <>
-      <ContainerBarraDeNavegacao>
+      <EstiloBarraDeNavegacao>
         
-      </ContainerBarraDeNavegacao>
+      </EstiloBarraDeNavegacao>
     </>
   );
 };

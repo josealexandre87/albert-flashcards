@@ -1,24 +1,33 @@
 import { createGlobalStyle } from "styled-components";
+import ImagemDeFundoPrincipalDoBody from "../../assets/images/ImagemDeFundoPrincipal.jpeg";
 
 export const EstiloGlobal = createGlobalStyle`
+
+    body {
+        background-color: #E063FF;
+        //background-image: url(${ImagemDeFundoPrincipalDoBody});
+        //background-repeat: no-repeat; // Impede que a imagem se repita
+        //background-size: cover; // Ajusta o tamanho da imagem para cobrir toda a área do body
+    }
+
     .App {
         width: 1380px;
         height: 900px;
-        background: #00ffa0;
+        background: #DCFD00;
         padding: 1rem;
         border-radius: 1rem;
-        border: 1px solid #05060f;
-        box-shadow: 0.4rem 0.4rem #05060f;
+        border: 2px solid #01090C;
+        box-shadow: 0.4rem 0.4rem #01090C;
         //overflow: hidden;
         color: black;
     }
 
     .containerprincipal {
-        background: #FFFFFF;
+        background: #FCFCFC;
         padding: 1rem;
         border-radius: 1rem;
-        border: 1px solid #05060f;
-        box-shadow: 0.4rem 0.4rem #05060f;
+        border: 2px solid #01090C;
+        box-shadow: 0.4rem 0.4rem #01090C;
         color: black;
     }
 `;
