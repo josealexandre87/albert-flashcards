@@ -22,12 +22,12 @@ export const EstiloGlobal = createGlobalStyle`
         color: black;
     }
 
-    .containerprincipal {
+    /*.containerprincipal {
         background: #FCFCFC;
         padding: 1rem;
         border-radius: 1rem;
         border: 2px solid #01090C;
         box-shadow: 0.4rem 0.4rem #01090C;
         color: black;
-    }
+    }*/
 `;
