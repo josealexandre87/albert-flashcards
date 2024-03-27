@@ -8,9 +8,9 @@ interface IconeDeSecaoProps {
 export const IconeDeSecao = ({ icone, alt }: IconeDeSecaoProps) => {
   return (
     <EstiloIconeDeSecao>
-      <div>
-        <img src={icone} alt={`Ícone da Seção ${alt}`} />
-      </div>
+        <div>
+            <img src={icone} alt={`Ícone da Seção ${alt}`} />
+        </div>
     </EstiloIconeDeSecao>
   );
 };
