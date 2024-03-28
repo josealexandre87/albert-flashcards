@@ -1,16 +1,18 @@
-import { EstiloIconeDeSecao } from "./EstiloIconeDeSecao";
-
+import { EstiloIconeDeSecao} from "./EstiloIconeDeSecao";
 interface IconeDeSecaoProps {
+  classe: string;
   icone: string;
   alt: string;
 }
 
-export const IconeDeSecao = ({ icone, alt }: IconeDeSecaoProps) => {
+export const IconeDeSecao = ({ classe, icone, alt }: IconeDeSecaoProps) => {
   return (
-    <EstiloIconeDeSecao>
-        <div>
-            <img src={icone} alt={`Ícone da Seção ${alt}`} />
-        </div>
-    </EstiloIconeDeSecao>
+    <>
+      <EstiloIconeDeSecao>
+        <span>
+          <img className={classe} src={icone} alt={`Ícone da Seção ${alt}`} />
+        </span>
+      </EstiloIconeDeSecao>
+    </>
   );
 };

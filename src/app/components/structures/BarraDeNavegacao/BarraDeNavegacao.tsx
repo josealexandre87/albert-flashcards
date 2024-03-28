@@ -7,6 +7,7 @@ import iconeBancoDeDecks from "../../../assets/icons/iconesDeSecao/banckdedecks.
 import iconeProgresso from "../../../assets/icons/iconesDeSecao/progresso.png";
 import iconeConfiguracoes from "../../../assets/icons/iconesDeSecao/configuracoes.png";
 import IconeSair from "../../../assets/icons/iconesDeSecao/sair.png";
+import { IconeDeSecao } from "../../atoms/IconeDeSecao/IconeDeSecao";
 
 interface Secao {
   id: number;
@@ -15,7 +16,6 @@ interface Secao {
 }
 
 export const BarraDeNavegacao = () => {
-  
   const menuDeSecoes: Secao[] = [
     { id: 1, caminho: iconeDaPaginaPrincial, nomeDaSecao: "Principal" },
     { id: 2, caminho: iconeEstude, nomeDaSecao: "Estude" },
@@ -36,13 +36,13 @@ export const BarraDeNavegacao = () => {
           <section className="menu-de-secoes">
             <ul>
               {menuDeSecoes.map((secao) => (
-                <li key={secao.id}> {/*RESOLVER O PROBLEMA DA TAG <img> */}
-                    <img 
-                      className={`icone-da-secao-${secao.nomeDaSecao.toLowerCase()}`}
-                      src={secao.caminho}
-                      alt={secao.nomeDaSecao}
-                    />
-                    <NomeDaSecao nome={secao.nomeDaSecao} />
+                <li key={secao.id}>
+                  <IconeDeSecao
+                    classe={`icone-da-secao-${secao.nomeDaSecao.toLowerCase()}`}
+                    icone={secao.caminho}
+                    alt={secao.nomeDaSecao}
+                  /> 
+                  <NomeDaSecao nome={secao.nomeDaSecao} />
                 </li>
               ))}
             </ul>
