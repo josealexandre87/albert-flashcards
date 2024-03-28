@@ -1,17 +1,29 @@
-import { IconeDeSecao } from "../../atoms/IconeDeSecao/IconeDeSecao";
 import { NomeDaSecao } from "../../atoms/NomeDaSecao/NomeDaSecao";
 import { EstiloBarraDeNavegacao } from "./EstiloBarraDeNavegacao";
+import iconeDaPaginaPrincial from "../../../assets/icons/iconesDeSecao/home.png";
+import iconeEstude from "../../../assets/icons/iconesDeSecao/estude.png";
+import iconeCriacaoDeCards from "../../../assets/icons/iconesDeSecao/criacaodecards.png";
+import iconeBancoDeDecks from "../../../assets/icons/iconesDeSecao/banckdedecks.png";
+import iconeProgresso from "../../../assets/icons/iconesDeSecao/progresso.png";
+import iconeConfiguracoes from "../../../assets/icons/iconesDeSecao/configuracoes.png";
+import IconeSair from "../../../assets/icons/iconesDeSecao/sair.png";
+import { IconeDeSecao } from "../../atoms/IconeDeSecao/IconeDeSecao";
+
+interface Secao {
+  id: number;
+  caminho: string;
+  nomeDaSecao: string;
+}
 
 export const BarraDeNavegacao = () => {
-  
-  const menuDeSecoes = [
-    { id: 1, icone: "caminho/", nomeDaSecao: "Principal" },
-    { id: 2, icone: "caminho/", nomeDaSecao: "Estude" },
-    { id: 3, icone: "caminho/", nomeDaSecao: "Criação de Cards" },
-    { id: 4, icone: "caminho/", nomeDaSecao: "Banco de Decks" },
-    { id: 5, icone: "caminho/", nomeDaSecao: "Progresso" },
-    { id: 6, icone: "caminho/", nomeDaSecao: "Configurações" },
-    { id: 7, icone: "caminho/", nomeDaSecao: "Sair" },
+  const menuDeSecoes: Secao[] = [
+    { id: 1, caminho: iconeDaPaginaPrincial, nomeDaSecao: "Principal" },
+    { id: 2, caminho: iconeEstude, nomeDaSecao: "Estude" },
+    { id: 3, caminho: iconeCriacaoDeCards, nomeDaSecao: "Criação de Cards" },
+    { id: 4, caminho: iconeBancoDeDecks, nomeDaSecao: "Banco de Decks" },
+    { id: 5, caminho: iconeProgresso, nomeDaSecao: "Progresso" },
+    { id: 6, caminho: iconeConfiguracoes, nomeDaSecao: "Configurações" },
+    { id: 7, caminho: IconeSair, nomeDaSecao: "Sair" },
   ];
 
   return (
@@ -23,13 +35,14 @@ export const BarraDeNavegacao = () => {
           </div>
           <section className="menu-de-secoes">
             <ul>
-              {menuDeSecoes.map((menuDeSecoes) => (
-                <li key={menuDeSecoes.id}>
-                    <IconeDeSecao
-                      icone={menuDeSecoes.icone}
-                      alt={menuDeSecoes.nomeDaSecao}
-                    />
-                  <NomeDaSecao nome={menuDeSecoes.nomeDaSecao} />
+              {menuDeSecoes.map((secao) => (
+                <li key={secao.id}>
+                  <IconeDeSecao
+                    classe={`icone-da-secao-${secao.nomeDaSecao.toLowerCase()}`}
+                    icone={secao.caminho}
+                    alt={secao.nomeDaSecao}
+                  /> 
+                  <NomeDaSecao nome={secao.nomeDaSecao} />
                 </li>
               ))}
             </ul>
